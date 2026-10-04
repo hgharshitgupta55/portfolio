@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #1a2a44;
+  background-color: #ffffff;
+}
+
+a {
+  display: inline-block;
+  color: #163a72;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.site-header {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #c9a227;
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0b2545;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #3d5a80;
+  font-style: italic;
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2.25rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #163a72;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about p {
+  margin: 0 0 1rem;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.skills ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.skills li {
+  margin-bottom: 0.35rem;
+}
+
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.15rem;
+  background-color: #f7fafc;
+  border: 1px solid #d6e0ee;
+  border-left: 4px solid #c9a227;
+}
+
+.projects li:last-child {
+  margin-bottom: 0;
+}
+
+.projects a {
+  color: #0b2545;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.projects a:hover,
+.projects a:focus {
+  color: #b8860b;
+}
+
+.projects p {
+  margin: 0.4rem 0 0;
+  color: #2c3e55;
+}
+
+.site-footer {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #c9a227;
+  color: #3d5a80;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  .site-header {
+    padding-top: 2rem;
+  }
+}
