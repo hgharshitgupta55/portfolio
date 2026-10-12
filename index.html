@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harshit Gupta</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css">
+
   </head>
   <body>
     <header class="site-header">
@@ -73,11 +75,44 @@
       </div>
   </section>
 
+<section class="ai-chat">
+  <h2>Ask My AI Assistant</h2>
+
+  <p>
+    Ask questions about my portfolio.
+  </p>
+
+  <div id="chatMessages" aria-live="polite"></div>
+
+  <div class="chat-input-row">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Type your question..."
+    />
+
+    <button id="sendButton" type="button">
+      Send
+    </button>
+  </div>
+
+  <p id="chatStatus" role="status"></p>
+
+  <p class="chat-note">
+    AI chat works in the local classroom
+    demonstration only. The API key is
+    not published with this website.
+  </p>
+</section>
+
+
     <footer class="site-footer">
       <p>Email: <a href="mailto:hgharshitgupta55@gmail.com">hgharshitgupta55@gmail.com</a></p>
     </footer>
     <button id="themeToggle">Switch to Dark Mode</button>
     <script src="script.js"></script>
+    <script src="config.js"></script>
+    <script src="chatbot.js"></script> 
   </body>
 </html>
 
